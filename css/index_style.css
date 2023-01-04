@@ -1,0 +1,499 @@
+.homepage_splash_screen {
+	margin: 0;
+	padding: 0;
+
+	background-color: #a3e0d7;
+
+	overflow: hidden;
+}
+
+.homepage_splash_screen .bg_image {
+	background: url(../images/homepage/soccer_field_1_alt2_wide.jpg) center center no-repeat;
+	background-size: cover;
+	height: 100%;
+}
+
+.homepage_splash_screen .splash_screen_heading {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+
+	display: grid;
+
+	grid-template-columns: 7% 1fr 1fr 7%;
+	grid-auto-rows: 100%;
+	grid-template-areas:
+		". left_sidebar right_sidebar .";
+}
+
+.homepage_splash_screen .splash_screen_heading .logo {
+	grid-area: left_sidebar;
+
+	position: absolute;
+
+	text-align: center;
+
+	top: 50%;
+	transform: translateY(-50%);
+}
+
+.homepage_splash_screen .splash_screen_heading .logo img {
+	filter: invert(100%);
+	width: 400px;
+}
+
+.homepage_splash_screen .splash_screen_heading .arrow {
+	grid-area: right_sidebar;
+
+	background: url(../images/homepage/Arrow.png) right bottom no-repeat;
+	background-size: 100px 100px;
+
+	height: 102%;
+}
+
+@media screen and (max-width: 992px) {
+	.homepage_splash_screen .splash_screen_heading {
+		grid-template-rows: 80% 20%;
+		grid-template-areas:
+			". left_sidebar left_sidebar ."
+			". right_sidebar right_sidebar .";
+	}
+
+	.homepage_splash_screen .splash_screen_heading .arrow {
+		overflow: visible;
+		background-size: 150px 150px;
+		height: 110%;
+	}
+}
+
+.homepage_content {
+	display: grid;
+
+	grid-template-columns: 1fr 1fr 1fr 1fr;
+	grid-auto-rows: auto;
+	/*grid-auto-rows: 100%;*/
+	grid-template-areas:
+		"company_header company_header company_description company_description"
+		"nitserv_heading nitserv_heading nitserv_picture nitserv_picture"
+		"box_grid box_grid box_grid box_grid"
+		"wide_picture wide_picture wide_picture wide_picture"
+		". wide_picture_description wide_picture_description wide_picture_description"
+		"experience_heading experience_heading experience_picture experience_picture"
+		"experience_description experience_description experience_description experience_description"
+		"contact_area contact_area contact_area contact_area";
+}
+
+.homepage_content .content_header {
+	margin: 50px;
+	margin-left: 20%;
+}
+
+.homepage_content .content_description {
+	margin: 50px;
+	margin-right: 20%;
+}
+
+.homepage_content #company_header {
+	grid-area: company_header;
+}
+
+.homepage_content #company_description {
+	grid-area: company_description;
+}
+
+.homepage_content #experience_header {
+	grid-area: experience_header;
+}
+
+.homepage_content #experience_description {
+	grid-area: experience_description;
+	margin-left: 10%;
+}
+
+.homepage_content #experience_description p {
+	padding-left: 0;
+}
+
+.homepage_content .content_description p {
+	/* background-color: #ffffffad; */
+
+	margin: 0;
+	margin-bottom: 20px;
+	padding-left: 10px;
+	padding-right: 10px;
+	padding-top: 0;
+}
+
+.homepage_content .section_heading {
+	margin-left: 10%;
+	padding-top: 200px;
+	padding-bottom: 50px;
+	padding-right: 100px;
+	padding-left: 10%;
+}
+
+.homepage_content #nitserv_heading {
+	grid-area: nitserv_heading;
+
+	background-color: #feef52;
+}
+
+.homepage_content #experience_heading {
+	grid-area: experience_heading;
+
+	background-color: #333366e6;
+}
+
+.homepage_content #experience_heading h1,
+.homepage_content #experience_heading h5 {
+	color: white;
+}
+
+.homepage_content .section_heading h1 {
+	border-style: solid;
+	border-width: 2px;
+	border-left: none;
+
+}
+
+.homepage_content .section_heading h5 {
+	position: absolute;
+	margin-top: 15px;
+}
+
+.homepage_content .section_picture {}
+
+.homepage_content #nitserv_picture {
+	grid-area: nitserv_picture;
+	background: url(../images/homepage/pumper_unit_web_edit.png) top left no-repeat;
+}
+
+.homepage_content #experience_picture {
+	grid-area: experience_picture;
+	background: url(../images/homepage/farmland_image_medium.png) top left no-repeat;
+	background-size: auto 100%;
+}
+
+.homepage_content .box_grid {
+	grid-area: box_grid;
+
+	display: grid;
+
+	grid-template-columns: 10% 1fr 1fr 1fr 10%;
+	grid-auto-rows: auto;
+	/*grid-auto-rows: 100%;*/
+	grid-template-areas:
+		". nitserv_box1 nitserv_box2 nitserv_box3 ."
+		". nitserv_box4 nitserv_box5 nitserv_box6 .";
+}
+
+.homepage_content .section_box {
+	width: 90%;
+	padding-top: 40%;
+	/*height: 100%;*/
+
+	margin: auto;
+	margin-top: 12.5%;
+
+	border-style: solid;
+	border-width: 2px;
+	border-color: #333366;
+
+	background: url(../images/homepage/blank.png) top center no-repeat;
+	background-size: 120% auto;
+
+	-webkit-transition: background-image 0.2s ease-in-out;
+	transition: background-image 0.2s ease-in-out;
+
+	text-decoration: none;
+}
+
+.homepage_content #nitserv_box1 {
+	grid-area: nitserv_box1;
+
+	margin-left: 0;
+}
+
+.homepage_content #nitserv_box1:hover {
+	background: url(../images/homepage/barton_chart_small.jpg) top center no-repeat;
+	background-size: 120% auto;
+}
+
+.homepage_content #nitserv_box2 {
+	grid-area: nitserv_box2;
+}
+
+.homepage_content #nitserv_box2:hover {
+	background: url(../images/homepage/pigging_small.jpg) top center no-repeat;
+	background-size: 120% auto;
+}
+
+.homepage_content #nitserv_box3 {
+	grid-area: nitserv_box3;
+
+	margin-right: 0;
+}
+
+.homepage_content #nitserv_box3:hover {
+	background: url(../images/homepage/de-watering_small.jpg) top center no-repeat;
+	background-size: 120% auto;
+}
+
+.homepage_content #nitserv_box4 {
+	grid-area: nitserv_box4;
+
+	margin-left: 0;
+}
+
+.homepage_content #nitserv_box4:hover {
+	background: url(../images/homepage/well_stimulation_small.jpg) top center no-repeat;
+	background-size: 120% auto;
+}
+
+.homepage_content #nitserv_box5 {
+	grid-area: nitserv_box5;
+}
+
+.homepage_content #nitserv_box5:hover {
+	background: url(../images/homepage/pipeline_maintenance_small.jpg) top center no-repeat;
+	background-size: 120% auto;
+}
+
+.homepage_content #nitserv_box6 {
+	grid-area: nitserv_box6;
+
+	margin-right: 0;
+}
+
+.homepage_content .section_box h4 {
+	margin: 10px;
+}
+
+.homepage_content .section_box h5 {
+	position: absolute;
+
+	margin-top: -80px;
+
+	-webkit-transform: rotate(-90deg);
+	transform: rotate(-90deg);
+}
+
+.homepage_content #contact_area {
+	grid-area: contact_area;
+
+	width: 100%;
+	height: 100vh;
+
+	margin-top: 50px;
+
+
+	border: 0;
+
+	z-index: 200;
+	-webkit-transform: translate3d(0, 0, 1px);
+	transform: translate3d(0, 0, 1px);
+}
+
+.homepage_content .wide_picture {
+	grid-area: wide_picture;
+
+	width: 100%;
+
+	background: url(../images/homepage/Colorised-Transport-Unit_medium.png) top center no-repeat;
+	background-size: 100% auto;
+
+	margin-top: 50px;
+	/*margin-bottom: 50px;*/
+}
+
+.homepage_content .wide_picture h1 {
+	position: absolute;
+
+	border-style: solid;
+	border-width: 2px;
+	border-left: none;
+
+	color: #333366;
+
+	right: 10%;
+	margin-top: -120px;
+	padding-right: 30px;
+}
+
+.homepage_content .wide_picture_description {
+	grid-area: wide_picture_description;
+
+	text-align: right;
+
+	margin: 0;
+	padding: 0;
+
+	width: 86.5%;
+
+	margin-bottom: 50px;
+}
+
+.homepage_content .wide_picture_description h3 {
+	margin: 0;
+	padding: 0;
+}
+
+.homepage_content .wide_picture_description h4 {
+	margin: 0;
+	padding: 0;
+	margin-top: 5px;
+}
+
+.homepage_content .wide_picture_description h4 a {
+	text-decoration: none;
+	color: inherit;
+}
+
+@media screen and (max-width: 992px) {
+	.homepage_content {
+		grid-template-areas:
+			"company_header company_header company_header company_header"
+			"company_description company_description company_description company_description"
+			"nitserv_heading nitserv_heading nitserv_heading nitserv_heading"
+			"nitserv_picture nitserv_picture nitserv_picture nitserv_picture"
+			"box_grid box_grid box_grid box_grid"
+			"wide_picture wide_picture wide_picture wide_picture"
+			"wide_picture_description wide_picture_description wide_picture_description wide_picture_description"
+			"experience_heading experience_heading experience_heading experience_heading"
+			"experience_description experience_description experience_description experience_description"
+			"contact_area contact_area contact_area contact_area";
+	}
+
+	.homepage_content .section_heading {
+		padding-top: 0;
+		padding-bottom: 0;
+	}
+
+	.homepage_content #nitserv_picture {
+		height: 474px;
+	}
+
+	.homepage_content #experience_heading {
+		margin-left: 0;
+	}
+
+	.homepage_content .box_grid {
+		grid-template-columns: 5% 1fr 5%;
+		grid-template-areas:
+			". nitserv_box1 ."
+			". nitserv_box2 ."
+			". nitserv_box3 ."
+			". nitserv_box4 ."
+			". nitserv_box5 ."
+			". nitserv_box6 .";
+	}
+
+	.homepage_content .section_box {
+		width: 95%;
+		padding-top: 20%;
+
+		margin-top: 5%;
+	}
+
+	.homepage_content .section_box h4 {
+		background-color: #ffffffad;
+	}
+
+	.homepage_content #nitserv_box1 {
+		margin-left: auto;
+		margin-right: auto;
+
+		background: url(../images/homepage/barton_chart_small.jpg) top center no-repeat;
+		background-size: 120% auto;
+	}
+
+	.homepage_content #nitserv_box2 {
+		margin-left: auto;
+		margin-right: auto;
+
+		background: url(../images/homepage/pigging_small.jpg) top center no-repeat;
+		background-size: 120% auto;
+	}
+
+	.homepage_content #nitserv_box3 {
+		margin-left: auto;
+		margin-right: auto;
+
+		background: url(../images/homepage/de-watering_small.jpg) top center no-repeat;
+		background-size: 120% auto;
+	}
+
+	.homepage_content #nitserv_box4 {
+		margin-left: auto;
+		margin-right: auto;
+
+		background: url(../images/homepage/well_stimulation_small.jpg) top center no-repeat;
+		background-size: 120% auto;
+	}
+
+	.homepage_content #nitserv_box5 {
+		margin-left: auto;
+		margin-right: auto;
+
+		background: url(../images/homepage/pipeline_maintenance_small.jpg) top center no-repeat;
+		background-size: 120% auto;
+	}
+
+	.homepage_content #nitserv_box6 {
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	.homepage_content .wide_picture h1 {
+		right: 7.5%;
+	}
+
+	.homepage_content .wide_picture_description {
+		width: 92.5%;
+		margin-top: 15px;
+
+		background-color: #ffffffad;
+	}
+}
+
+@media screen and (orientation:landscape) and (max-width: 992px) {
+	.homepage_content .box_grid {
+		grid-template-columns: 5% 1fr 1fr 5%;
+		grid-template-areas:
+			". nitserv_box1 nitserv_box2 ."
+			". nitserv_box3 nitserv_box4 ."
+			". nitserv_box5 nitserv_box6 .";
+	}
+
+	.homepage_content .section_box {
+		padding-top: 30%;
+		margin-top: 7.5%;
+	}
+
+	.homepage_content #nitserv_box1 {
+		margin-left: 0;
+	}
+
+	.homepage_content #nitserv_box2 {
+		margin-right: 0;
+	}
+
+	.homepage_content #nitserv_box3 {
+		margin-left: 0;
+	}
+
+	.homepage_content #nitserv_box4 {
+		margin-left: auto;
+		margin-right: 0;
+	}
+
+	.homepage_content #nitserv_box5 {
+		margin-left: 0;
+	}
+
+	.homepage_content #nitserv_box6 {
+		margin-right: 0;
+	}
+}

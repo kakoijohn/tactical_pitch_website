@@ -1,0 +1,125 @@
+#google_maps {
+	grid-area: google_maps;
+
+	width: 100%;
+	height: 100vh;
+	min-height: 700px;
+
+	margin-top: 80px;
+
+	z-index: 0;
+}
+
+#google_maps iframe {
+	width: 100%;
+	height: 100%;
+}
+
+.floating_section {
+	position: absolute;
+	background-color: #ffe900ab;
+
+	padding: 10px;
+	left: 10px;
+
+	-webkit-transition: ease-in 0.2s all;
+	transition: ease-in 0.2s all;
+}
+
+.floating_section:hover {
+	background-color: #ffe900;
+}
+
+.floating_section h3 {
+	margin-top: 0;
+	margin-bottom: 0;
+}
+
+.floating_section p:last-child {
+	margin-bottom: 0;
+}
+
+#headquarters {
+	margin-top: 135px;
+}
+
+#general_manager {
+	margin-top: 310px;
+}
+
+#manager_supervisor {
+	margin-top: 465px;
+}
+
+#general_contact {
+	margin-top: 465px;
+	margin-left: 230px;
+}
+
+#contact_area {
+	margin-top: 0;
+}
+
+.contact_page_content {
+	display: grid;
+
+	grid-template-columns: 1fr 1fr 1fr 1fr;
+	grid-auto-rows: auto;
+	/*grid-auto-rows: 100%;*/
+	grid-template-areas: 
+		/*"blank blank blank blank"*/
+		"google_maps google_maps google_maps google_maps"
+		"contact_area contact_area contact_area contact_area";
+}
+
+@media screen and (max-width: 992px) {
+	.contact_page_content {
+		grid-template-areas:
+			"google_maps google_maps google_maps google_maps"
+			"contact_area contact_area contact_area contact_area";
+	}
+}
+
+@media screen and (orientation:portrait) and (max-width: 992px) {
+	#google_maps {
+		margin-top: 150px;
+	}
+
+	#general_manager {
+		margin-top: 450px;
+	}
+
+	#manager_supervisor {
+		margin-top: 900px;
+	}
+
+	#general_contact {
+		margin-top: 1190px;
+		margin-left: 0;
+	}
+}
+
+@media screen and (orientation:landscape) and (max-width: 992px) {
+	h3 {
+		font-size: 18pt;
+	}
+	p {
+		font-size: 15pt;
+	}
+
+	#google_maps {
+		height: 140vh;
+	}
+
+	#general_manager {
+		margin-top: 335px;
+	}
+
+	#manager_supervisor {
+		margin-top: 520px;
+	}
+
+	#general_contact {
+		margin-top: 520px;
+	}
+}

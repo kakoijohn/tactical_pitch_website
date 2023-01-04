@@ -1,0 +1,60 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+	<link rel="stylesheet" type="text/css" href="../css/style.css">
+	<link rel="stylesheet" type="text/css" href="../css/request_a_quote_style.css">
+
+	<link href="https://fonts.googleapis.com/css?family=Rajdhani:300,400,500,600,700" rel="stylesheet">
+
+	<script src="../scripts/jquery.min.js"></script>
+	<script src="../scripts/jquery.visible.min.js"></script>
+	
+	<script type="text/javascript">
+		$(document).ready(function() {
+			$('.request_a_quote #name').click(function() {
+				$('.request_a_quote #name input').focus();
+			});
+			$('.request_a_quote #company').click(function() {
+				$('.request_a_quote #company input').focus();
+			});
+			$('.request_a_quote #email').click(function() {
+				$('.request_a_quote #email input').focus();
+			});
+			$('.request_a_quote #phone').click(function() {
+				$('.request_a_quote #phone input').focus();
+			});
+		});
+	</script>
+</head>
+
+<body>
+	<form class="request_a_quote" action="https://docs.google.com/forms/d/e/1FAIpQLSfFiOR7qu6TYEAK12RkMqo63CyNsiTgmj0jvW0f9YpCFvACOA/formResponse">
+		<div class="form_cell" id="title">
+			<h1>Contact</h1>
+		</div>
+		<div class="form_cell" id="name">
+			<input name="entry.723518955" type="text" placeholder="NAME" />
+		</div>
+		<div class="form_cell" id="company">
+			<input name="entry.185140507" type="text" placeholder="COMPANY" />
+		</div>
+		<div class="form_cell" id="email">
+			<input name="entry.257022474" type="text" placeholder="EMAIL" />
+		</div>
+		<div class="form_cell" id="phone">
+			<input name="entry.886061274" type="text" placeholder="PHONE" />
+		</div>
+		<div class="form_cell" id="description">
+			<p>Contact us for a quote or any questions you may have.</p>
+			<p>Please include the <strong>scope of work</strong>, <strong>when the services are needed</strong>, <strong>location</strong>, and <strong>due date</strong> for the quote in the description if the information is known.</p>
+		</div>
+		<div class="form_cell" id="comment">
+			<textarea name="entry.1279966970" type="text" placeholder="DESCRIPTION OF TASK"></textarea>
+		</div>
+		<div class="form_cell" id="submit">
+			<input class="submit_button" type="submit" value="SUBMIT" />
+		</div>
+	</form>
+</body>
