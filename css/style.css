@@ -98,7 +98,7 @@ a:hover {
 	width: 100%;
 	height: 80px;
 	grid-template-columns: 10% 2fr 1fr 1fr 1fr 1fr 1fr 1fr 10%;
-	grid-template-areas: ". logo about nitrogen_services equipment gallery contact drop_down .";
+	grid-template-areas: ". logo about nitrogen_services equipment contact gallery drop_down .";
 
 	background-color: var(--surface);
 
@@ -265,8 +265,7 @@ a:hover {
 	margin-top: 5%;
 }
 
-.full_context_menu .sub_menu {
-}
+/* .full_context_menu .sub_menu {} */
 
 .full_context_menu #sub_menu1 {
 	grid-area: sub_menu1;
@@ -359,9 +358,9 @@ a:hover {
 	grid-template-areas: 
 		". . . . ."
 		". footer_logo footer_logo footer_address ."
-		". footer_row1 footer_row1 women_owned ."
-		". footer_row2 footer_row2 women_owned ."
-		". footer_row3 footer_row3 women_owned ."
+		". footer_row1 footer_row1 download_badge ."
+		". footer_row2 footer_row2 download_badge ."
+		". footer_row3 footer_row3 download_badge ."
 		". footer_row4 footer_row4 footer_row4 ."
 		". . . . .";
 
@@ -378,14 +377,14 @@ a:hover {
 	background-size: contain;
 }
 
-.page_footer .footer_text_area .women_owned {
-	grid-area: women_owned;
+.page_footer .footer_text_area .download_badge {
+	grid-area: download_badge;
 
 	width: 100%;
 	height: 100%;
 
-	background: url(../images/logo/WOBLogo.png) center center no-repeat;
-	background-size: 80% auto;
+	background: url(../images/icons/get_it_anywhere_badge.svg) center center no-repeat;
+	background-size: 45% auto;
 
 	color: white;
 	border-top: solid;
@@ -538,9 +537,9 @@ a:hover {
 		grid-template-areas: 
 			". . . . ."
 			". footer_logo footer_address footer_address ."
-			". footer_row1 footer_row1 women_owned ."
-			". footer_row2 footer_row2 women_owned ."
-			". footer_row3 footer_row3 women_owned ."
+			". footer_row1 footer_row1 download_badge ."
+			". footer_row2 footer_row2 download_badge ."
+			". footer_row3 footer_row3 download_badge ."
 			". footer_row4 footer_row4 footer_row4 ."
 			". . . . .";
 	}
