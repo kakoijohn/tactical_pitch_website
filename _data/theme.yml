@@ -1,0 +1,12 @@
+dark:
+  background: #4A4B4C
+  primary: #B3D841
+  secondary: #FF5900
+  tertiary: #B3D841
+  outline: #FFFFFF
+  surface: #383837
+  surfaceVariant: #1C1C1C
+  error: red
+  shadow: #9BCAF0
+  textColor: white
+  textHighlightColor: #B3D841

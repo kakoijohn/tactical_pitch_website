@@ -1,0 +1,11 @@
+<div class="main_menu">
+    <a class="logo" href="{{ site.data.navigation.docs.first.url }}"></a>
+    <div class="tabs">
+        {% for item in site.data.navigation.docs %}
+            {% if forloop.index != 1 %}
+                <div id="{{ item.id }}"><a href="{{ item.url }}">{{ item.title }}</a></div>
+            {% endif %}
+        {% endfor %}
+    </div>
+    <a class="drop_down" id="drop_down_menu"></a>
+</div>

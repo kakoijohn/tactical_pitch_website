@@ -1,0 +1,34 @@
+docs_list_title: Main navigation tabs
+docs:
+
+- title: Home
+  id: home
+  url: index.html
+  row: 1
+
+- title: About us
+  id: about
+  url: about.html
+  row: 1
+
+- title: Features and pricing
+  id: nitrogen_services
+  url: features_and_pricing.html
+  row: 2
+
+- title: Latest news
+  id: equipment
+  url: news.html
+  row: 2
+
+- title: Contact
+  id: contact
+  url: contact.html
+  row: 3
+
+- title: My pitches
+  id: gallery
+  url: https://tacticalpitch.com
+  row: 3
+
+#NOTE: Maxmium of 3 rows

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+
+<html lang="{{ site.lang | default: 'en-US' }}">
+{% include head.html %}
+
+<body>
+    <a class="drop_only" id="drop_only_menu"></a>
+    {% include components/header.html %}
+    
+    {% include components/full_context_menu.html %}
+
+    {% include components/homepage_splash_screen.html %}
+
+    <div class="homepage_content">
+        {{ content }}
+
+        
+
+        <!--
+
+        <div class="wide_picture">
+            <img src="images/homepage/Colorised-Transport-Unit_medium.png" height="auto" width="100%"
+                style="visibility: hidden;">
+            <h1>Equipment</h1>
+        </div>
+        <div class="wide_picture_description">
+            <h3>Atlantic Nitrogen Pumping Services provides cost-effective nitrogen for any size job small or large. Our
+                740K pump trucks can be taken to the most remote locations in the US. Our expert drivers and operators,
+                provide safe reliable services to you the customer.</h3>
+            <h4 class="continue_reading"><a href="#">Find out more...</a></h4>
+        </div>
+
+        <div class="section_heading" id="experience_heading">
+            <h5>We are here to serve you</h5>
+            <h1>Trusted Experience</h1>
+        </div>
+        <div class="section_picture" id="experience_picture"></div>
+
+        <div class="content_description" id="experience_description">
+            <p>Atlantic Nitrogen Pumping Services is the industry leader when it comes to <strong>up-to-date equipment,
+                    expert operators, and safety compliance</strong>. We act in accordance with all industry standards
+                and
+                go above and beyond when it comes to safety. Atlantic understands the inherent dangers present in
+                compressed
+                nitrogen and working in the oil field, so we take every precaution necessary to mitigate risk.</p>
+        </div> -->
+
+        <!-- {% include components/contact_form.html %} -->
+    </div>
+
+    {% include components/footer.html %}
+</body>
+
+</html>

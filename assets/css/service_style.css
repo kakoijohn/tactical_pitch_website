@@ -1,0 +1,149 @@
+.service_page_content {
+	padding-top: 100px;
+}
+
+.three_block_heading {
+	margin-left: 5%;
+	margin-right: 5%;
+	margin-bottom: 5%;
+
+	width: 90%;
+	height: 50vh;
+
+	display: grid;
+
+	grid-template-columns: 1fr 5fr 10fr;
+
+	grid-template-areas: "block1 block2 block3";
+}
+
+.block1 {
+	position: relative;
+
+	grid-area: block1;
+
+	margin-right: 5px;
+
+	border-style: solid;
+	border-width: 1px;
+	border-color: #333366;
+
+	background-color: white;
+}
+
+.block1 h5 {
+	position: absolute;
+
+	white-space: nowrap;
+	
+	margin: 0;
+	bottom: 0;
+
+    -webkit-transform: rotate(-90deg);
+    transform: rotate(-90deg);
+    transform-origin: 0% 0%;
+}
+
+.block2 {
+	grid-area: block2;
+
+	margin-left: 5px;
+	margin-right: 5px;
+
+	border-style: solid;
+	border-width: 3px;
+	border-color: #333366;
+
+	background-size: cover !important;
+	background-color: white;
+}
+
+.block3 {
+	position: relative;
+
+	grid-area: block3;
+
+	margin-left: 5px;
+
+	border-style: solid;
+	border-width: 1px;
+	border-color: #333366;
+
+	background-color: white;
+}
+
+.block3 h1 {
+	position: absolute;
+
+	margin: 0;
+	bottom: 0;
+	right: 10px;
+
+	color: #333366;
+
+	text-align: right;
+}
+
+.block3 p {
+	position: absolute;
+
+	margin: 10px;
+
+	margin-right: 30%;
+}
+
+@media screen and (max-width: 992px) and (orientation:portrait) {
+	.three_block_heading {
+		height: 70vh;
+
+		grid-template-columns: 1fr;
+
+		grid-template-rows: 1fr 2fr 5fr; 
+
+		grid-template-areas: 
+			"block1"
+			"block2"
+			"block3";
+	}
+
+	.block1 {
+		margin-right: 0;
+	}
+
+	.block1 h5 {
+		margin-left: 5px;
+
+		font-size: 20pt;
+
+	    -webkit-transform: rotate(0deg);
+	    transform: rotate(0deg);
+	    transform-origin: 0% 0%;
+	}
+
+	.block2 {
+		margin-left: 0;
+		margin-right: 0;
+	}
+
+	.block3 {
+		margin-left: 0;
+	}
+
+	.service_page_content {
+		padding-top: 200px;
+	}
+
+	.block3 p {
+		margin-right: 20%;
+	}
+}
+
+@media screen and (max-width: 992px) and (orientation:landscape) {
+	.three_block_heading {
+		height: 80vh;
+	}
+
+	.block3 p {
+		font-size: 17pt;
+	}
+}
